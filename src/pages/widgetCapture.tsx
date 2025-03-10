@@ -17,12 +17,18 @@ interface WidgetOptions {
     backgroundColor: string;
     padding: string;
     borderRadius: string;
+    width: string;
+    maxWidth: string;
   };
   buttonStyles: {
     fontSize: string;
     borderRadius: string;
     width: string;
+    maxWidth: string;
+    padding: string;
   };
+  containerClassName?: string;
+  buttonClassName?: string;
 }
 
 // Extend Window interface to include our widget initialization function
@@ -125,18 +131,19 @@ export const WidgetDemo = forwardRef<WidgetRefMethods, WidgetCaptureProps>(({ ur
 
       window.initializeDiroWidget(widgetContainer, {
         targetUrl,
+
         buttonText: "Start verification",
         allowRedirection: true,
         openWith: "sametab",
         containerStyles: {
           backgroundColor: "#f0f0f0",
-          padding: "20px",
-          borderRadius: "10px",
+          padding: "40px",
+          borderRadius: "8px",
         },
         buttonStyles: {
-          fontSize: "16px",
-          borderRadius: "12px",
-          width: "350px",
+          fontSize: "14px",
+          borderRadius: "8px",
+          width: "300px",
         },
       });
 
@@ -161,13 +168,15 @@ export const WidgetDemo = forwardRef<WidgetRefMethods, WidgetCaptureProps>(({ ur
     <React.Fragment>
       {!isWidgetLoaded && <div className="widget-loading">Loading Diro widget...</div>}
 
-      <div
-        key={`diro-container-${containerKey}`}
-        className="diro-widget"
-        id={`diro-widget-container-${containerKey}`}
-        ref={containerRef}
-        style={{ display: isWidgetLoaded ? "block" : "none" }}
-      />
+      <div className="w-full">
+        <div
+          key={`diro-container-${containerKey}`}
+          className="diro-widget"
+          id={`diro-widget-container-${containerKey}`}
+          ref={containerRef}
+          style={{ display: isWidgetLoaded ? "block" : "none" }}
+        />
+      </div>
     </React.Fragment>
   );
 });
