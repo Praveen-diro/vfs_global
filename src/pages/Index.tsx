@@ -20,7 +20,7 @@ const Index = () => {
     <div className="min-h-screen">
       <header className="border-b border-gray-200 py-4">
         <div className="container mx-auto px-4">
-          <img src={logo} alt="VFS Logo" className="w-24 sm:w-30 h-8 sm:h-12" />
+          <img src={logo} alt="VFS Logo" className="w-30 sm:w-30 h-8 sm:h-12" />
         </div>
       </header>
 
