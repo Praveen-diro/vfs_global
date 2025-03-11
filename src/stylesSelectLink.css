@@ -426,6 +426,7 @@
     font-weight: 600;
     font-size: 12px;
     margin-bottom: 2px;
+    text-align: left !important;
 }
 
 .diro-widget .diro-result-item:hover {
