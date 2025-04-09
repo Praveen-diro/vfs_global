@@ -17,15 +17,11 @@ interface WidgetOptions {
     backgroundColor: string;
     padding: string;
     borderRadius: string;
-    width: string;
-    maxWidth: string;
   };
   buttonStyles: {
     fontSize: string;
     borderRadius: string;
     width: string;
-    maxWidth: string;
-    padding: string;
   };
   containerClassName?: string;
   buttonClassName?: string;
