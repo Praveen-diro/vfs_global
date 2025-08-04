@@ -39,12 +39,12 @@ const Index = () => {
 
             <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">
               VFS Global partners with{" "}
-              <a href="#" className="text-vfs-lightblue hover:underline">
+              <a href="https://diro.io/" className="text-vfs-lightblue hover:underline">
                 DIRO
               </a>{" "}
               for this process, the leading provider of bank verification solutions trusted by F500 and Tier 1 global banks. Visit
               DIRO{" "}
-              <a href="#" className="text-vfs-lightblue hover:underline">
+              <a href="https://trust.diro.io/" className="text-vfs-lightblue hover:underline">
                 Trust Center
               </a>
               .
@@ -52,17 +52,17 @@ const Index = () => {
 
             <p className="text-gray-600 mb-4 text-sm sm:text-base">
               Learn more about DIRO's{" "}
-              <a href="#" className="text-vfs-lightblue hover:underline">
+              <a href="https://diro.io/products/bank-account-verification/" className="text-vfs-lightblue hover:underline">
                 bank
               </a>{" "}
               verification solutions.
             </p>
 
             <div className="mb-4 sm:mb-6">
-              <a href="#" className="text-vfs-lightblue hover:underline mr-4 text-sm sm:text-base">
+              <a href="https://diro.io/term-condition/" className="text-vfs-lightblue hover:underline mr-4 text-sm sm:text-base">
                 Terms of Use
               </a>
-              <a href="#" className="text-vfs-lightblue hover:underline text-sm sm:text-base">
+              <a href="https://diro.io/privacy-policy/" className="text-vfs-lightblue hover:underline text-sm sm:text-base">
                 Privacy Policy
               </a>
             </div>
